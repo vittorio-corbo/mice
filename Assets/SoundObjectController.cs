@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SoundObjectController : MonoBehaviour
@@ -13,7 +14,8 @@ public class SoundObjectController : MonoBehaviour
     [SerializeField] AudioSource source;
 
     //make this into a list
-    [SerializeField] AudioClip[] audioClip;
+    //[SerializeField] AudioClip[] audioClip;//done if there are multiple
+    [SerializeField] AudioClip audioClip;
 
     // [SerializeField] AudioClip[] audioClipFirst;
     // [SerializeField] AudioClip[] audioClipSecond;
@@ -45,7 +47,8 @@ public class SoundObjectController : MonoBehaviour
 
     public void PlaySound(){
         // source.outputAudioMixerGroup = clip;
-        source.clip = audioClip[0];
+        //source.clip = audioClip[0];
+        source.clip = audioClip;
         source.Play();
         //audio. = otherClip;
 
@@ -75,11 +78,22 @@ public class SoundObjectController : MonoBehaviour
 
 
     public void SelectObject(){
+        phase += 1;
+
         //maybe play sfx
 
         //change to object
 
 
+        //KILL CURRENT GEN AND BIRTH NEW ONE
+        //Debug.Log("OBJECT SELECTED");
+        if (this.transform.childCount == 0){
+            Debug.Log("we the last boys");
+        }
+        //Debug.Log(this.transform.childCount);
+        //Debug.Log(this.transform.childCount);
+        //Debug.Log(this.transform.childCount);
+        //Debug.Log(this.transform.childCount);
 
         //DESTROY OTHER 2
         SoundObjectController[] objectsOfKind = FindObjectsOfType<SoundObjectController>();

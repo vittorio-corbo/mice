@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 93274583}
   - component: {fileID: 93274584}
   m_Layer: 0
-  m_Name: Left
+  m_Name: A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -345,8 +345,7 @@ MonoBehaviour:
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 93274583}
-  audioClip:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
   branch:
   - {fileID: 415982985}
   - {fileID: 412106194}
@@ -388,8 +387,7 @@ MonoBehaviour:
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 346659246}
-  audioClip:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 8300000, guid: 094a8751e8c9f6747ad6c2d4adb6b978, type: 3}
   branch:
   - {fileID: 1502851664}
   - {fileID: 482595980}
@@ -570,7 +568,7 @@ Transform:
   m_GameObject: {fileID: 346659244}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -5.516}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -609,7 +607,7 @@ Transform:
   m_GameObject: {fileID: 376948414}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.6819997}
+  m_LocalPosition: {x: 0, y: 0, z: 0.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -627,12 +625,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df7810761661ec4c95793db46017df3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: 0
+  position: 1
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 376948417}
-  audioClip:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 0}
   branch:
   - {fileID: 0}
   - {fileID: 0}
@@ -841,8 +838,7 @@ MonoBehaviour:
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 412106196}
-  audioClip:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 8300000, guid: f663cf58d52542f46ba8fb7fe9fb3bf2, type: 3}
   branch:
   - {fileID: 1204596942}
   - {fileID: 376948414}
@@ -1023,7 +1019,7 @@ Transform:
   m_GameObject: {fileID: 412106194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -2.655}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1069,8 +1065,7 @@ MonoBehaviour:
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 415982987}
-  audioClip:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
   branch:
   - {fileID: 1833288656}
   - {fileID: 1419461526}
@@ -1400,7 +1395,7 @@ Transform:
   m_GameObject: {fileID: 482595980}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.6819992}
+  m_LocalPosition: {x: 0, y: 0, z: 2.86}
   m_LocalScale: {x: 0.9999552, y: 0.9999552, z: 0.9999552}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1418,12 +1413,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df7810761661ec4c95793db46017df3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: 0
+  position: 1
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 482595983}
-  audioClip:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 0}
   branch: []
 --- !u!82 &482595983
 AudioSource:
@@ -1826,7 +1820,7 @@ Transform:
   m_GameObject: {fileID: 1204596942}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.6099997}
+  m_LocalPosition: {x: 0, y: 0, z: 2.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1848,8 +1842,7 @@ MonoBehaviour:
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 1204596945}
-  audioClip:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 0}
   branch: []
 --- !u!82 &1204596945
 AudioSource:
@@ -2033,7 +2026,7 @@ GameObject:
   - component: {fileID: 1324206859}
   - component: {fileID: 1324206858}
   m_Layer: 0
-  m_Name: Mid
+  m_Name: B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2055,8 +2048,7 @@ MonoBehaviour:
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 1324206859}
-  audioClip:
-  - {fileID: 8300000, guid: f663cf58d52542f46ba8fb7fe9fb3bf2, type: 3}
+  audioClip: {fileID: 8300000, guid: f663cf58d52542f46ba8fb7fe9fb3bf2, type: 3}
   branch: []
 --- !u!82 &1324206859
 AudioSource:
@@ -2288,12 +2280,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df7810761661ec4c95793db46017df3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: 0
+  position: 1
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 1419461529}
-  audioClip:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 8300000, guid: f663cf58d52542f46ba8fb7fe9fb3bf2, type: 3}
   branch: []
 --- !u!82 &1419461529
 AudioSource:
@@ -2492,7 +2483,7 @@ Transform:
   m_GameObject: {fileID: 1502851664}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.6099987}
+  m_LocalPosition: {x: 0, y: 0, z: 5.67}
   m_LocalScale: {x: 0.9999552, y: 0.9999552, z: 0.9999552}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2514,8 +2505,7 @@ MonoBehaviour:
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 1502851667}
-  audioClip:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 0}
   branch: []
 --- !u!82 &1502851667
 AudioSource:
@@ -2732,12 +2722,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df7810761661ec4c95793db46017df3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: 0
+  position: 2
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 1510942995}
-  audioClip:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 8300000, guid: 094a8751e8c9f6747ad6c2d4adb6b978, type: 3}
   branch: []
 --- !u!82 &1510942995
 AudioSource:
@@ -2921,7 +2910,7 @@ GameObject:
   - component: {fileID: 1679315342}
   - component: {fileID: 1679315341}
   m_Layer: 0
-  m_Name: Right
+  m_Name: C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2943,8 +2932,7 @@ MonoBehaviour:
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 1679315342}
-  audioClip:
-  - {fileID: 8300000, guid: 094a8751e8c9f6747ad6c2d4adb6b978, type: 3}
+  audioClip: {fileID: 8300000, guid: 094a8751e8c9f6747ad6c2d4adb6b978, type: 3}
   branch: []
 --- !u!82 &1679315342
 AudioSource:
@@ -3237,8 +3225,7 @@ MonoBehaviour:
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 1833288659}
-  audioClip:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
   branch: []
 --- !u!82 &1833288659
 AudioSource:
@@ -3437,7 +3424,7 @@ Transform:
   m_GameObject: {fileID: 1889889851}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -2.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3455,12 +3442,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df7810761661ec4c95793db46017df3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: 0
+  position: 2
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 1889889854}
-  audioClip:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 0}
   branch:
   - {fileID: 0}
   - {fileID: 0}
@@ -3680,12 +3666,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df7810761661ec4c95793db46017df3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: 0
+  position: 2
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 1899769083}
-  audioClip:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 0}
   branch: []
 --- !u!82 &1899769083
 AudioSource:
