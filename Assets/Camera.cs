@@ -10,9 +10,9 @@ public class Camera : MonoBehaviour
     public int objSelected = 0;
 
     //[SerializeField] SoundObjectController cube;
-    [SerializeField] SoundObjectController left;
-    [SerializeField] SoundObjectController mid;
-    [SerializeField] SoundObjectController right;
+    [SerializeField] public SoundObjectController left;
+    [SerializeField] public SoundObjectController mid;
+    [SerializeField] public SoundObjectController right;
 
     // Update is called once per frame
     void Update()
@@ -43,9 +43,11 @@ public class Camera : MonoBehaviour
         // if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             //CHANGE THIS TO SELECT
-            
-            PlayObject();
-            //cube.PlaySound();
+
+            //PlayObject();
+            SelectObject();
+
+
         }
     }
 
@@ -69,6 +71,33 @@ public class Camera : MonoBehaviour
             mid.StopSound();
         }else { // == 1
             right.StopSound();
+        }
+    }
+
+    public void SelectObject(){
+        Debug.Log("this happend");
+
+        if (objSelected == -1){
+            left.SelectObject();
+
+        } else if (objSelected == 0){
+            mid.SelectObject();
+        }else { // == 1
+            right.SelectObject();
+        }
+    }
+
+
+    public void ObjectsChange(int pos, SoundObjectController soundObjectController){
+        Debug.Log("pizza even?");
+        Debug.Log(pos);
+        Debug.Log(soundObjectController);
+        if (pos == 0){
+            left = soundObjectController;
+        } else if (pos == 1){
+            mid = soundObjectController;
+        } else{
+            right = soundObjectController;
         }
     }
 }
