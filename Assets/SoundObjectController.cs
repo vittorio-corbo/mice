@@ -30,4 +30,10 @@ public class SoundObjectController : MonoBehaviour
         //audio. = otherClip;
 
     }
+    public void StopSound(){
+        // source.outputAudioMixerGroup = clip;
+        source.Stop();
+        //audio. = otherClip;
+
+    }
 }
