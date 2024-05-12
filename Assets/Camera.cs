@@ -14,40 +14,52 @@ public class Camera : MonoBehaviour
     [SerializeField] public SoundObjectController mid;
     [SerializeField] public SoundObjectController right;
 
+
+    [SerializeField] AudioSource source;
+    [SerializeField] AudioClip[] audioClips;
+
+    public bool freeze = false;
+
+    void Start(){
+        NewDay(0);
+    }
+
     // Update is called once per frame
     void Update()
     {
-        // Check for left arrow key press
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && (objSelected != -1))
-        {
-            // Rotate the object to the left by the defined amount
-            transform.Rotate(Vector3.up, -rotationAmount);
-            StopObject();
+        if (freeze == false){
+            // Check for left arrow key press
+            if (Input.GetKeyDown(KeyCode.LeftArrow) && (objSelected != -1))
+            {
+                // Rotate the object to the left by the defined amount
+                transform.Rotate(Vector3.up, -rotationAmount);
+                StopObject();
 
-            objSelected -= 1;
-            PlayObject();
-        }
+                objSelected -= 1;
+                PlayObject();
+            }
 
-        // Check for right arrow key press
-        if (Input.GetKeyDown(KeyCode.RightArrow) && (objSelected != 1))
-        {
-            // Rotate the object to the right by the defined amount
-            transform.Rotate(Vector3.up, rotationAmount);
-            StopObject();
+            // Check for right arrow key press
+            if (Input.GetKeyDown(KeyCode.RightArrow) && (objSelected != 1))
+            {
+                // Rotate the object to the right by the defined amount
+                transform.Rotate(Vector3.up, rotationAmount);
+                StopObject();
 
-            objSelected += 1;
-            PlayObject();
-        }
+                objSelected += 1;
+                PlayObject();
+            }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        // if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            //CHANGE THIS TO SELECT
+            if (Input.GetKeyDown(KeyCode.Space))
+            // if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                //CHANGE THIS TO SELECT
 
-            //PlayObject();
-            SelectObject();
+                //PlayObject();
+                SelectObject();
 
 
+            }
         }
     }
 
@@ -100,4 +112,34 @@ public class Camera : MonoBehaviour
             right = soundObjectController;
         }
     }
+
+
+    public void NewDay(int day){
+
+        StartCoroutine(HelperNewDay(day));
+    }
+
+
+    public IEnumerator HelperNewDay(int day)
+    {
+        freeze = true;
+
+        source.clip = audioClips[day];
+
+        // Play the audio clip
+        source.Play();
+
+        // Wait until the audio clip is done playing
+        while (source.isPlaying)
+        {
+            yield return null;
+        }
+
+        //ITS DONEEEEE
+        freeze = false;
+        Debug.Log("MY MOMMA DID IT");
+
+        // Return true to indicate that the sound has finished playing
+        yield return true;
+    }    
 }

@@ -16,6 +16,7 @@ public class SoundObjectController : MonoBehaviour
     //make this into a list
     //[SerializeField] AudioClip[] audioClip;//done if there are multiple
     [SerializeField] AudioClip audioClip;
+    [SerializeField] AudioClip audioClip2;
 
     // [SerializeField] AudioClip[] audioClipFirst;
     // [SerializeField] AudioClip[] audioClipSecond;
@@ -78,9 +79,84 @@ public class SoundObjectController : MonoBehaviour
 
 
     public void SelectObject(){
+
+        //camera.freeze = true;
+        StartCoroutine(PlaySoundAndWait());
+
+        // phase += 1;
+
+        // //maybe play sfx
+
+
+        // //change to object
+
+
+        // //KILL CURRENT GEN AND BIRTH NEW ONE
+        // //Debug.Log("OBJECT SELECTED");
+        // if (this.transform.childCount == 0){
+        //     Debug.Log("we the last boys");
+        // }
+        // //Debug.Log(this.transform.childCount);
+        // //Debug.Log(this.transform.childCount);
+        // //Debug.Log(this.transform.childCount);
+        // //Debug.Log(this.transform.childCount);
+
+        // //DESTROY OTHER 2
+        // SoundObjectController[] objectsOfKind = FindObjectsOfType<SoundObjectController>();
+
+        // foreach (SoundObjectController objOfKind in objectsOfKind){
+            
+        //     // if (objOfKind.gameObject != this){
+        //     if (objOfKind.gameObject != gameObject){
+        //         Debug.Log("pizza");
+        //         Destroy(objOfKind.gameObject);
+        //     }
+
+        // }
+
+        
+
+        // //activate my children
+        // foreach (GameObject leaves in branch){
+        //     //Debug.Log("how many times?");
+
+        //     leaves.SetActive(true);   
+        //     //leaves.parent = null;
+        // }
+
+        // //KILL FATHER
+
+        // List<Transform> childrenList = new List<Transform>();
+
+        // // Add references to the children to the list
+        // foreach (Transform child in transform)
+        // {
+        //     childrenList.Add(child);
+        // }
+
+
+        // foreach (Transform leaves in childrenList){
+        //     //Debug.Log("BEEEEEE many times?");
+        //     Debug.Log(leaves.name);
+
+        //     //leaves.SetActive(true);   
+        //     leaves.parent = null;
+        //     //camera.left = (SoundObjectController) leaves;
+        // }
+
+
+        // //DESTROY SELF
+        // Destroy(gameObject);
+
+
+    }
+
+
+    private void NewDay(){
         phase += 1;
 
         //maybe play sfx
+
 
         //change to object
 
@@ -144,4 +220,31 @@ public class SoundObjectController : MonoBehaviour
 
 
     }
+
+
+
+    public IEnumerator PlaySoundAndWait()
+    {
+
+        source.clip = audioClip2;
+
+        // Play the audio clip
+        source.Play();
+
+        // Wait until the audio clip is done playing
+        while (source.isPlaying)
+        {
+            yield return null;
+        }
+
+
+
+        //ITS DONEEEEE
+        NewDay();
+        camera.NewDay(phase);
+        Debug.Log("MY MOMMA DID IT");
+
+        // Return true to indicate that the sound has finished playing
+        yield return true;
+    }    
 }
