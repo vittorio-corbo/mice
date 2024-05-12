@@ -1594,10 +1594,7 @@ MonoBehaviour:
   source: {fileID: 356943763}
   audioClip: {fileID: 0}
   audioClip2: {fileID: 0}
-  branch:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  branch: []
   win: 0
 --- !u!82 &356943763
 AudioSource:
@@ -1825,15 +1822,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: 1
-  phase: 0
+  phase: 2
   camera: {fileID: 0}
   source: {fileID: 376948417}
-  audioClip: {fileID: 0}
-  audioClip2: {fileID: 0}
-  branch:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  audioClip: {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip2: {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  branch: []
   win: 0
 --- !u!82 &376948417
 AudioSource:
@@ -2066,10 +2060,7 @@ MonoBehaviour:
   source: {fileID: 393430893}
   audioClip: {fileID: 0}
   audioClip2: {fileID: 0}
-  branch:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  branch: []
   win: 0
 --- !u!82 &393430893
 AudioSource:
@@ -2888,7 +2879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: 1
-  phase: 0
+  phase: 2
   camera: {fileID: 0}
   source: {fileID: 482595983}
   audioClip: {fileID: 0}
@@ -4683,8 +4674,8 @@ MonoBehaviour:
   right: {fileID: 0}
   source: {fileID: 963194230}
   audioClips:
-  - {fileID: 8300000, guid: f663cf58d52542f46ba8fb7fe9fb3bf2, type: 3}
-  - {fileID: 8300000, guid: 094a8751e8c9f6747ad6c2d4adb6b978, type: 3}
+  - {fileID: 8300000, guid: 1e13cc3a98a4fe04591f7776463274d2, type: 3}
+  - {fileID: 8300000, guid: 1e13cc3a98a4fe04591f7776463274d2, type: 3}
   - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
   - {fileID: 8300000, guid: 1e13cc3a98a4fe04591f7776463274d2, type: 3}
   - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
@@ -5310,11 +5301,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: 0
-  phase: 0
+  phase: 2
   camera: {fileID: 0}
   source: {fileID: 1204596945}
-  audioClip: {fileID: 0}
-  audioClip2: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip2: {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
   branch: []
   win: 0
 --- !u!82 &1204596945
@@ -6487,7 +6478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: 0
-  phase: 0
+  phase: 2
   camera: {fileID: 0}
   source: {fileID: 1502851667}
   audioClip: {fileID: 0}
@@ -8432,15 +8423,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: 2
-  phase: 0
+  phase: 2
   camera: {fileID: 0}
   source: {fileID: 1889889854}
-  audioClip: {fileID: 0}
-  audioClip2: {fileID: 0}
-  branch:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  audioClip: {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip2: {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  branch: []
   win: 0
 --- !u!82 &1889889854
 AudioSource:
@@ -8901,7 +8889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: 2
-  phase: 0
+  phase: 2
   camera: {fileID: 0}
   source: {fileID: 1899769083}
   audioClip: {fileID: 0}
@@ -9139,10 +9127,7 @@ MonoBehaviour:
   source: {fileID: 1974409180}
   audioClip: {fileID: 0}
   audioClip2: {fileID: 0}
-  branch:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  branch: []
   win: 0
 --- !u!82 &1974409180
 AudioSource:
@@ -9608,10 +9593,7 @@ MonoBehaviour:
   source: {fileID: 2099340368}
   audioClip: {fileID: 0}
   audioClip2: {fileID: 0}
-  branch:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  branch: []
   win: 0
 --- !u!82 &2099340368
 AudioSource:

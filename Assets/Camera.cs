@@ -103,6 +103,7 @@ public class Camera : MonoBehaviour
 
     public void SelectObject(){
         Debug.Log("this happend");
+        freeze = true;
 
         if (objSelected == -1){
             left.SelectObject();
