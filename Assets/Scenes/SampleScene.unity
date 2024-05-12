@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 93274579}
   - component: {fileID: 93274583}
   - component: {fileID: 93274584}
+  - component: {fileID: 93274585}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -345,12 +346,21 @@ MonoBehaviour:
   phase: 0
   camera: {fileID: 0}
   source: {fileID: 93274583}
-  audioClip: {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
+  audioClip: {fileID: 8300000, guid: 738ed8a9cc8e6b7438e0feb7c80209be, type: 3}
   audioClip2: {fileID: 8300000, guid: 1e13cc3a98a4fe04591f7776463274d2, type: 3}
   branch:
   - {fileID: 415982985}
   - {fileID: 412106194}
   - {fileID: 346659244}
+--- !u!170 &93274585
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93274578}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &102597452
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +375,7 @@ GameObject:
   - component: {fileID: 102597456}
   - component: {fileID: 102597455}
   - component: {fileID: 102597454}
+  - component: {fileID: 102597459}
   m_Layer: 0
   m_Name: H
   m_TagString: Untagged
@@ -573,6 +584,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102597452}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &102597459
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102597452}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &277284019
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +607,7 @@ GameObject:
   - component: {fileID: 277284023}
   - component: {fileID: 277284022}
   - component: {fileID: 277284021}
+  - component: {fileID: 277284026}
   m_Layer: 0
   m_Name: G
   m_TagString: Untagged
@@ -795,6 +816,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277284019}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &277284026
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277284019}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &288828077
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,6 +839,7 @@ GameObject:
   - component: {fileID: 288828081}
   - component: {fileID: 288828080}
   - component: {fileID: 288828079}
+  - component: {fileID: 288828084}
   m_Layer: 0
   m_Name: E
   m_TagString: Untagged
@@ -1023,6 +1054,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288828077}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &288828084
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288828077}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &300853870
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +1077,7 @@ GameObject:
   - component: {fileID: 300853874}
   - component: {fileID: 300853873}
   - component: {fileID: 300853872}
+  - component: {fileID: 300853877}
   m_Layer: 0
   m_Name: H
   m_TagString: Untagged
@@ -1245,6 +1286,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300853870}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &300853877
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300853870}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &346659244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,6 +1309,7 @@ GameObject:
   - component: {fileID: 346659247}
   - component: {fileID: 346659246}
   - component: {fileID: 346659245}
+  - component: {fileID: 346659251}
   m_Layer: 0
   m_Name: F
   m_TagString: Untagged
@@ -1473,6 +1524,15 @@ Transform:
   - {fileID: 1899769081}
   m_Father: {fileID: 93274582}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!170 &346659251
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346659244}
+  m_Enabled: 1
+  m_DistortionLevel: 0.4
 --- !u!1 &356943760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,6 +1547,7 @@ GameObject:
   - component: {fileID: 356943764}
   - component: {fileID: 356943763}
   - component: {fileID: 356943762}
+  - component: {fileID: 356943767}
   m_Layer: 0
   m_Name: I
   m_TagString: Untagged
@@ -1698,6 +1759,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356943760}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &356943767
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356943760}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &376948414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,6 +1782,7 @@ GameObject:
   - component: {fileID: 376948418}
   - component: {fileID: 376948417}
   - component: {fileID: 376948416}
+  - component: {fileID: 376948421}
   m_Layer: 0
   m_Name: H
   m_TagString: Untagged
@@ -1923,6 +1994,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376948414}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &376948421
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376948414}
+  m_Enabled: 1
+  m_DistortionLevel: 0.7
 --- !u!1 &393430890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,6 +2017,7 @@ GameObject:
   - component: {fileID: 393430894}
   - component: {fileID: 393430893}
   - component: {fileID: 393430892}
+  - component: {fileID: 393430897}
   m_Layer: 0
   m_Name: I
   m_TagString: Untagged
@@ -2148,6 +2229,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393430890}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &393430897
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393430890}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &412106194
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,6 +2252,7 @@ GameObject:
   - component: {fileID: 412106197}
   - component: {fileID: 412106196}
   - component: {fileID: 412106195}
+  - component: {fileID: 412106201}
   m_Layer: 0
   m_Name: E
   m_TagString: Untagged
@@ -2376,6 +2467,15 @@ Transform:
   - {fileID: 1889889852}
   m_Father: {fileID: 93274582}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!170 &412106201
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412106194}
+  m_Enabled: 1
+  m_DistortionLevel: 0.4
 --- !u!1 &415982985
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,6 +2490,7 @@ GameObject:
   - component: {fileID: 415982988}
   - component: {fileID: 415982987}
   - component: {fileID: 415982986}
+  - component: {fileID: 415982992}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -2604,6 +2705,15 @@ Transform:
   - {fileID: 1510942993}
   m_Father: {fileID: 93274582}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!170 &415982992
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415982985}
+  m_Enabled: 1
+  m_DistortionLevel: 0.4
 --- !u!1 &417388063
 GameObject:
   m_ObjectHideFlags: 0
@@ -2731,6 +2841,7 @@ GameObject:
   - component: {fileID: 482595984}
   - component: {fileID: 482595983}
   - component: {fileID: 482595982}
+  - component: {fileID: 482595987}
   m_Layer: 0
   m_Name: H
   m_TagString: Untagged
@@ -2939,6 +3050,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482595980}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &482595987
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482595980}
+  m_Enabled: 1
+  m_DistortionLevel: 0.4
 --- !u!1 &485652470
 GameObject:
   m_ObjectHideFlags: 0
@@ -2953,6 +3073,7 @@ GameObject:
   - component: {fileID: 485652474}
   - component: {fileID: 485652473}
   - component: {fileID: 485652472}
+  - component: {fileID: 485652477}
   m_Layer: 0
   m_Name: I
   m_TagString: Untagged
@@ -3161,6 +3282,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485652470}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &485652477
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485652470}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &659620138
 GameObject:
   m_ObjectHideFlags: 0
@@ -3175,6 +3305,7 @@ GameObject:
   - component: {fileID: 659620142}
   - component: {fileID: 659620141}
   - component: {fileID: 659620140}
+  - component: {fileID: 659620145}
   m_Layer: 0
   m_Name: G
   m_TagString: Untagged
@@ -3383,6 +3514,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659620138}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &659620145
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659620138}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &694852340
 GameObject:
   m_ObjectHideFlags: 0
@@ -3397,6 +3537,7 @@ GameObject:
   - component: {fileID: 694852344}
   - component: {fileID: 694852343}
   - component: {fileID: 694852342}
+  - component: {fileID: 694852347}
   m_Layer: 0
   m_Name: G
   m_TagString: Untagged
@@ -3605,6 +3746,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694852340}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &694852347
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694852340}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3713,6 +3863,7 @@ GameObject:
   - component: {fileID: 745457815}
   - component: {fileID: 745457814}
   - component: {fileID: 745457813}
+  - component: {fileID: 745457818}
   m_Layer: 0
   m_Name: G
   m_TagString: Untagged
@@ -3921,6 +4072,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745457811}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &745457818
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745457811}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &893101707
 GameObject:
   m_ObjectHideFlags: 0
@@ -3935,6 +4095,7 @@ GameObject:
   - component: {fileID: 893101711}
   - component: {fileID: 893101710}
   - component: {fileID: 893101709}
+  - component: {fileID: 893101714}
   m_Layer: 0
   m_Name: H
   m_TagString: Untagged
@@ -4143,6 +4304,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893101707}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &893101714
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893101707}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &944580172
 GameObject:
   m_ObjectHideFlags: 0
@@ -4157,6 +4327,7 @@ GameObject:
   - component: {fileID: 944580176}
   - component: {fileID: 944580175}
   - component: {fileID: 944580174}
+  - component: {fileID: 944580179}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -4371,6 +4542,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 944580172}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &944580179
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944580172}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4384,6 +4564,7 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4409,7 +4590,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4484,9 +4665,9 @@ MonoBehaviour:
   right: {fileID: 0}
   source: {fileID: 963194230}
   audioClips:
-  - {fileID: 8300000, guid: b904525f9736bc746be60a74bf9630b6, type: 3}
-  - {fileID: 8300000, guid: f663cf58d52542f46ba8fb7fe9fb3bf2, type: 3}
-  - {fileID: 8300000, guid: 094a8751e8c9f6747ad6c2d4adb6b978, type: 3}
+  - {fileID: 8300000, guid: d409d0f1102158e41b0d3d6f050e3d72, type: 3}
+  - {fileID: 8300000, guid: 6390a5b685757074a910c2bb4b90987a, type: 3}
+  - {fileID: 8300000, guid: 978905de043d6c74286008a9fcf0066a, type: 3}
   - {fileID: 8300000, guid: 1e13cc3a98a4fe04591f7776463274d2, type: 3}
   freeze: 0
 --- !u!82 &963194230
@@ -4585,6 +4766,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!170 &963194231
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &966485169
 GameObject:
   m_ObjectHideFlags: 0
@@ -4599,6 +4789,7 @@ GameObject:
   - component: {fileID: 966485173}
   - component: {fileID: 966485172}
   - component: {fileID: 966485171}
+  - component: {fileID: 966485176}
   m_Layer: 0
   m_Name: H
   m_TagString: Untagged
@@ -4807,6 +4998,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966485169}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &966485176
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966485169}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &1155265612
 GameObject:
   m_ObjectHideFlags: 0
@@ -4821,6 +5021,7 @@ GameObject:
   - component: {fileID: 1155265616}
   - component: {fileID: 1155265615}
   - component: {fileID: 1155265614}
+  - component: {fileID: 1155265619}
   m_Layer: 0
   m_Name: G
   m_TagString: Untagged
@@ -5029,6 +5230,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155265612}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1155265619
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155265612}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &1204596942
 GameObject:
   m_ObjectHideFlags: 0
@@ -5043,6 +5253,7 @@ GameObject:
   - component: {fileID: 1204596946}
   - component: {fileID: 1204596945}
   - component: {fileID: 1204596944}
+  - component: {fileID: 1204596949}
   m_Layer: 0
   m_Name: G
   m_TagString: Untagged
@@ -5251,6 +5462,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204596942}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1204596949
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204596942}
+  m_Enabled: 1
+  m_DistortionLevel: 0.7
 --- !u!1 &1324206857
 GameObject:
   m_ObjectHideFlags: 0
@@ -5265,6 +5485,7 @@ GameObject:
   - component: {fileID: 1324206860}
   - component: {fileID: 1324206859}
   - component: {fileID: 1324206858}
+  - component: {fileID: 1324206864}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -5479,6 +5700,15 @@ Transform:
   - {fileID: 1882322583}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!170 &1324206864
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324206857}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &1362355617
 GameObject:
   m_ObjectHideFlags: 0
@@ -5493,6 +5723,7 @@ GameObject:
   - component: {fileID: 1362355621}
   - component: {fileID: 1362355620}
   - component: {fileID: 1362355619}
+  - component: {fileID: 1362355624}
   m_Layer: 0
   m_Name: E
   m_TagString: Untagged
@@ -5707,6 +5938,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362355617}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1362355624
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362355617}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &1408670304
 GameObject:
   m_ObjectHideFlags: 0
@@ -5721,6 +5961,7 @@ GameObject:
   - component: {fileID: 1408670308}
   - component: {fileID: 1408670307}
   - component: {fileID: 1408670306}
+  - component: {fileID: 1408670311}
   m_Layer: 0
   m_Name: I
   m_TagString: Untagged
@@ -5929,6 +6170,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408670304}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1408670311
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408670304}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &1419461526
 GameObject:
   m_ObjectHideFlags: 0
@@ -5943,6 +6193,7 @@ GameObject:
   - component: {fileID: 1419461530}
   - component: {fileID: 1419461529}
   - component: {fileID: 1419461528}
+  - component: {fileID: 1419461533}
   m_Layer: 0
   m_Name: H
   m_TagString: Untagged
@@ -6151,6 +6402,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419461526}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1419461533
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419461526}
+  m_Enabled: 1
+  m_DistortionLevel: 0.7
 --- !u!1 &1502851664
 GameObject:
   m_ObjectHideFlags: 0
@@ -6165,6 +6425,7 @@ GameObject:
   - component: {fileID: 1502851668}
   - component: {fileID: 1502851667}
   - component: {fileID: 1502851666}
+  - component: {fileID: 1502851671}
   m_Layer: 0
   m_Name: G
   m_TagString: Untagged
@@ -6373,6 +6634,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502851664}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1502851671
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502851664}
+  m_Enabled: 1
+  m_DistortionLevel: 0.4
 --- !u!1 &1510942992
 GameObject:
   m_ObjectHideFlags: 0
@@ -6387,6 +6657,7 @@ GameObject:
   - component: {fileID: 1510942996}
   - component: {fileID: 1510942995}
   - component: {fileID: 1510942994}
+  - component: {fileID: 1510942999}
   m_Layer: 0
   m_Name: I
   m_TagString: Untagged
@@ -6595,6 +6866,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510942992}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1510942999
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510942992}
+  m_Enabled: 1
+  m_DistortionLevel: 0.7
 --- !u!1 &1679315340
 GameObject:
   m_ObjectHideFlags: 0
@@ -6609,6 +6889,7 @@ GameObject:
   - component: {fileID: 1679315343}
   - component: {fileID: 1679315342}
   - component: {fileID: 1679315341}
+  - component: {fileID: 1679315347}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -6823,6 +7104,15 @@ Transform:
   - {fileID: 1886440582}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!170 &1679315347
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679315340}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &1731886229
 GameObject:
   m_ObjectHideFlags: 0
@@ -6837,6 +7127,7 @@ GameObject:
   - component: {fileID: 1731886233}
   - component: {fileID: 1731886232}
   - component: {fileID: 1731886231}
+  - component: {fileID: 1731886236}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -7051,6 +7342,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731886229}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1731886236
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731886229}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1001 &1769866900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7122,6 +7422,7 @@ GameObject:
   - component: {fileID: 1833288660}
   - component: {fileID: 1833288659}
   - component: {fileID: 1833288658}
+  - component: {fileID: 1833288663}
   m_Layer: 0
   m_Name: G
   m_TagString: Untagged
@@ -7330,6 +7631,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833288656}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1833288663
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833288656}
+  m_Enabled: 1
+  m_DistortionLevel: 0.7
 --- !u!1 &1850602676
 GameObject:
   m_ObjectHideFlags: 0
@@ -7344,6 +7654,7 @@ GameObject:
   - component: {fileID: 1850602680}
   - component: {fileID: 1850602679}
   - component: {fileID: 1850602678}
+  - component: {fileID: 1850602683}
   m_Layer: 0
   m_Name: G
   m_TagString: Untagged
@@ -7552,6 +7863,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850602676}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1850602683
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850602676}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &1882322582
 GameObject:
   m_ObjectHideFlags: 0
@@ -7566,6 +7886,7 @@ GameObject:
   - component: {fileID: 1882322586}
   - component: {fileID: 1882322585}
   - component: {fileID: 1882322584}
+  - component: {fileID: 1882322589}
   m_Layer: 0
   m_Name: F
   m_TagString: Untagged
@@ -7780,6 +8101,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882322582}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1882322589
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882322582}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &1886440581
 GameObject:
   m_ObjectHideFlags: 0
@@ -7794,6 +8124,7 @@ GameObject:
   - component: {fileID: 1886440585}
   - component: {fileID: 1886440584}
   - component: {fileID: 1886440583}
+  - component: {fileID: 1886440588}
   m_Layer: 0
   m_Name: F
   m_TagString: Untagged
@@ -8008,6 +8339,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886440581}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1886440588
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886440581}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &1889889851
 GameObject:
   m_ObjectHideFlags: 0
@@ -8022,6 +8362,7 @@ GameObject:
   - component: {fileID: 1889889855}
   - component: {fileID: 1889889854}
   - component: {fileID: 1889889853}
+  - component: {fileID: 1889889858}
   m_Layer: 0
   m_Name: I
   m_TagString: Untagged
@@ -8233,6 +8574,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889889851}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1889889858
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889889851}
+  m_Enabled: 1
+  m_DistortionLevel: 0.7
 --- !u!1 &1894285840
 GameObject:
   m_ObjectHideFlags: 0
@@ -8247,6 +8597,7 @@ GameObject:
   - component: {fileID: 1894285844}
   - component: {fileID: 1894285843}
   - component: {fileID: 1894285842}
+  - component: {fileID: 1894285847}
   m_Layer: 0
   m_Name: I
   m_TagString: Untagged
@@ -8455,6 +8806,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894285840}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1894285847
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894285840}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &1899769080
 GameObject:
   m_ObjectHideFlags: 0
@@ -8469,6 +8829,7 @@ GameObject:
   - component: {fileID: 1899769084}
   - component: {fileID: 1899769083}
   - component: {fileID: 1899769082}
+  - component: {fileID: 1899769087}
   m_Layer: 0
   m_Name: I
   m_TagString: Untagged
@@ -8677,6 +9038,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899769080}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1899769087
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899769080}
+  m_Enabled: 1
+  m_DistortionLevel: 0.4
 --- !u!1 &1974409177
 GameObject:
   m_ObjectHideFlags: 0
@@ -8691,6 +9061,7 @@ GameObject:
   - component: {fileID: 1974409181}
   - component: {fileID: 1974409180}
   - component: {fileID: 1974409179}
+  - component: {fileID: 1974409184}
   m_Layer: 0
   m_Name: H
   m_TagString: Untagged
@@ -8902,6 +9273,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974409177}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &1974409184
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974409177}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &2049175069
 GameObject:
   m_ObjectHideFlags: 0
@@ -8916,6 +9296,7 @@ GameObject:
   - component: {fileID: 2049175073}
   - component: {fileID: 2049175072}
   - component: {fileID: 2049175071}
+  - component: {fileID: 2049175076}
   m_Layer: 0
   m_Name: I
   m_TagString: Untagged
@@ -9124,6 +9505,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049175069}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &2049175076
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049175069}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &2099340365
 GameObject:
   m_ObjectHideFlags: 0
@@ -9138,6 +9528,7 @@ GameObject:
   - component: {fileID: 2099340369}
   - component: {fileID: 2099340368}
   - component: {fileID: 2099340367}
+  - component: {fileID: 2099340372}
   m_Layer: 0
   m_Name: H
   m_TagString: Untagged
@@ -9349,6 +9740,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099340365}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!170 &2099340372
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099340365}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
