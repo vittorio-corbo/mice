@@ -25,6 +25,8 @@ public class SoundObjectController : MonoBehaviour
     //[SerializeField] SoundObjectController[] branch;
     [SerializeField] GameObject[] branch;
 
+    [SerializeField] bool win = false;
+
 
     //public GameObject parentObject;
 
@@ -190,7 +192,8 @@ public class SoundObjectController : MonoBehaviour
         foreach (GameObject leaves in branch){
             //Debug.Log("how many times?");
 
-            leaves.SetActive(true);   
+            leaves.SetActive(true); 
+            //increase phase??  
             //leaves.parent = null;
         }
 
@@ -241,6 +244,7 @@ public class SoundObjectController : MonoBehaviour
 
         //ITS DONEEEEE
         NewDay();
+        if (win){phase += 1;}
         camera.NewDay(phase);
         Debug.Log("MY MOMMA DID IT");
 

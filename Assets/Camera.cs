@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager.Requests;
 using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Camera : MonoBehaviour
 {
@@ -19,6 +21,8 @@ public class Camera : MonoBehaviour
     [SerializeField] AudioClip[] audioClips;
 
     public bool freeze = false;
+    private bool reset = false;
+    
 
     void Start(){
         NewDay(0);
@@ -57,6 +61,17 @@ public class Camera : MonoBehaviour
 
                 //PlayObject();
                 SelectObject();
+
+
+            }
+        }
+
+
+        //KILL IT ALL
+        if (reset == true){
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
 
             }
@@ -136,8 +151,19 @@ public class Camera : MonoBehaviour
         }
 
         //ITS DONEEEEE
+        Debug.Log(day);
         freeze = false;
         Debug.Log("MY MOMMA DID IT");
+        if (day == 3){
+            freeze = true;
+            reset = true;
+        } else if (day == 4){
+            freeze = true;
+            reset = true;
+            Debug.Log("as we know as?");
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentSceneIndex + 1);
+        }
 
         // Return true to indicate that the sound has finished playing
         yield return true;
