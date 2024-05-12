@@ -22,9 +22,36 @@ public class Camera : MonoBehaviour
 
     public bool freeze = false;
     private bool reset = false;
+
+
+    //OBJECTS
+    [SerializeField] public GameObject crowbar;
+    [SerializeField] public GameObject knife;
+    [SerializeField] public GameObject gun;
+
+    [SerializeField] public GameObject finger;
+    [SerializeField] public GameObject pendant;
+    [SerializeField] public GameObject bullet;
+    
+
+    [SerializeField] public GameObject blouse;
+    [SerializeField] public GameObject picture;
+    [SerializeField] public GameObject book;
+    
+    
     
 
     void Start(){
+        crowbar.SetActive(false); 
+        gun.SetActive(false); 
+        knife.SetActive(false); 
+        finger.SetActive(false); 
+        pendant.SetActive(false); 
+        bullet.SetActive(false); 
+        blouse.SetActive(false); 
+        picture.SetActive(false); 
+        book.SetActive(false); 
+
         NewDay(0);
     }
 
@@ -132,7 +159,56 @@ public class Camera : MonoBehaviour
 
     public void NewDay(int day){
 
+        SpawnObjects(day); 
+
         StartCoroutine(HelperNewDay(day));
+    }
+
+    public void SpawnObjects(int day){
+        if (day == 0){
+            
+            //Destroy(objOfKind.gameObject);
+
+            crowbar.SetActive(true); 
+            gun.SetActive(true); 
+            knife.SetActive(true); 
+            // crowbar.SetActive(true); 
+            // crowbar.SetActive(true); 
+
+
+
+        }else if (day == 1){
+            //kill previous three
+            Destroy(crowbar);
+            Destroy(gun);
+            Destroy(knife);
+
+            //get new three
+            finger.SetActive(true); 
+            pendant.SetActive(true); 
+            bullet.SetActive(true); 
+
+
+
+        } else if (day == 2){
+            //kill previous three
+            Destroy(finger);
+            Destroy(pendant);
+            Destroy(bullet);
+
+            //get new three
+            blouse.SetActive(true); 
+            picture.SetActive(true); 
+            book.SetActive(true); 
+
+
+        } else if (day == 3){
+            //kill previous three
+            Destroy(blouse);
+            Destroy(picture);
+            Destroy(book);
+
+        }
     }
 
 
